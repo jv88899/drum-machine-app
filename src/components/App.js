@@ -68,7 +68,13 @@ class App extends Component {
                 <div id="display"></div>
                 {
                     this.state.drumpad.map( item => (
-                        <Drumpad />
+                        <Drumpad
+                            key={item.keyCode}
+                            keyCode={item.keyCode}
+                            keyLetter={item.keyLetter}
+                            audioLink={item.audioLink}
+                            id={item.id}
+                        />
                     ))
                 }
             </div>
