@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Drumpad from './drumpad/Drumpad';
 
 class App extends Component {
     state = {
@@ -65,6 +66,11 @@ class App extends Component {
         return (
             <div id="drum-machine">
                 <div id="display"></div>
+                {
+                    this.state.drumpad.map( item => (
+                        <Drumpad />
+                    ))
+                }
             </div>
         )
     }
