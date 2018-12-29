@@ -74,6 +74,7 @@ class App extends Component {
                             keyLetter={item.keyLetter}
                             audioLink={item.audioLink}
                             id={item.id}
+                            handleKeyPress={this.handleKeyPress}
                         />
                     ))
                 }
